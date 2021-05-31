@@ -10,6 +10,7 @@ const postSchema = new mongoose.Schema({
 }, {
     collection: 'dp_post'
 });
+
 postSchema.plugin(uniqueValidator);
 
 const PostModel = mongoose.model('dp_post', postSchema);
